@@ -1,0 +1,1 @@
+import numpy as np; import matplotlib.pyplot as plt; masses = {'electron': 0.511, 'muon': 105.7, 'tau': 1776.8, 'top_quark': 172760.0}; results = [masses[np.random.choice(list(masses.keys()))] * 246 / 1000 for _ in range(1000000)]; plt.hist(results, bins=50, color='lime', edgecolor='black', log=True); plt.title('Higgs Field Mass Distribution (1,000,000 Particles)'); plt.show()
